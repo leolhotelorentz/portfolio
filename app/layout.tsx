@@ -9,17 +9,19 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <title>Portfolio - L'HOTE LORENTZ Léo</title>
       </head>
       <body>
-        <nav className="top-nav">
-          <div className="nav-container">
-              <a className="logo" href="index.html">L'HOTE LORENTZ Léo - Mon Portfolio</a>
-              <ul className="nav-links">
-                  <li><a href="index.html">Accueil</a></li>
-                  <li><a href="cv.html">CV</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-              </ul>
+        <nav className="navbar">
+          <div className="navbar-content">
+            <a className="logo" href="/">L'HOTE LORENTZ Léo </a>
+            <ul className="nav-links">
+              <li><a href="/">Accueil</a></li>
+              <li><a href="/cv">CV</a></li>
+              <li><a href="/contact">Contact</a></li>
+            </ul>
           </div>
-      </nav>
-        {children}
+        </nav>
+        <div className="layout-bg">
+          {children}
+        </div>
       </body>
     </html>
   );
