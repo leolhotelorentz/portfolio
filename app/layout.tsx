@@ -11,11 +11,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         <nav className="navbar">
           <div className="navbar-content">
-            <a className="logo" href="/">L'HOTE LORENTZ Léo </a>
+              <a className="logo" href="/portfolio">L'HOTE LORENTZ Léo </a>
             <ul className="nav-links">
-              <li><a href="/">Accueil</a></li>
-              <li><a href="/cv">CV</a></li>
-              <li><a href="/contact">Contact</a></li>
+                <li><a href="/portfolio">Accueil</a></li>
+                <li><a href="/portfolio/cv">CV</a></li>
+                <li><a href="/portfolio/contact">Contact</a></li>
             </ul>
           </div>
         </nav>
