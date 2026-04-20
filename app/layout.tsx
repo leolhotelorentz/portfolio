@@ -1,4 +1,5 @@
 import "./globals.css";
+import Link from "next/link";
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -11,11 +12,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         <nav className="navbar">
           <div className="navbar-content">
-              <a className="logo" href="/portfolio">L'HOTE LORENTZ Léo </a>
+              <Link className="logo" href="/">L'HOTE LORENTZ Léo </Link>
             <ul className="nav-links">
-                <li><a href="/portfolio">Accueil</a></li>
-                <li><a href="/portfolio/cv">CV</a></li>
-                <li><a href="/portfolio/contact">Contact</a></li>
+                <li><Link href="/">Accueil</Link></li>
+                <li><Link href="/cv">CV</Link></li>
+                <li><Link href="/stages">Stages</Link></li>
+                <li><Link href="/contact">Contact</Link></li>
             </ul>
           </div>
         </nav>
