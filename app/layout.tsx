@@ -2,6 +2,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./globals.css";
 import Link from "next/link";
+import NavMenuAutoClose from "./NavMenuAutoClose";
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -12,6 +13,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <title>Portfolio - L'HOTE LORENTZ Léo</title>
       </head>
       <body>
+        <NavMenuAutoClose />
         <nav className="site-navbar">
           <div className="navbar-content">
             <Link className="logo" href="/">L'HOTE LORENTZ Léo </Link>
@@ -26,7 +28,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <li><Link href="/cv">CV</Link></li>
               <li><Link href="/tableau-synthese">Tableau BTS</Link></li>
                 <li className="nav-dropdown">
-                  <Link href="/stages">Stages</Link>
+                  <button type="button" className="nav-dropdown-toggle">Stages</button>
                   <ul className="dropdown-menu">
                     <li><Link href="/stages/premiere-annee">Premiere annee</Link></li>
                     <li><Link href="/stages/deuxieme-annee">Deuxieme annee</Link></li>

@@ -5,7 +5,7 @@ export default function TableauSynthesePage() {
     <main className="container-fluid px-2 px-sm-3 px-md-4">
       <div className="main-container">
         <header>
-          <h1>Tableau de synthese BTS</h1>
+          <h1>Tableau de synthese BTS SIO</h1>
         </header>
         <section className="cv-section">
           <img src={tableauPath} className="cv-img" alt="Tableau de synthese BTS de L'HOTE LORENTZ Léo" />

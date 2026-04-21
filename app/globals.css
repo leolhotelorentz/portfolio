@@ -42,8 +42,10 @@ section.cv-section {
 }
 
 .layout-bg {
-  background: linear-gradient(135deg, #e0e7ff 0%, #f5f5f5 100%);
+  background: transparent;
+  min-height: calc(100vh - 70px);
   padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 
@@ -56,6 +58,7 @@ body {
   background: linear-gradient(135deg, #e0e7ff 0%, #f5f5f5 100%);
   color: #222;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 p {
@@ -80,7 +83,8 @@ p {
   margin: 0;
   padding: 18px 0;
 }
-.site-navbar a {
+.site-navbar a,
+.site-navbar .nav-dropdown-toggle {
   color: #fff;
   text-decoration: none;
   font-weight: 500;
@@ -89,7 +93,18 @@ p {
   border-radius: 6px;
   transition: background 0.2s, color 0.2s;
 }
-.site-navbar a:hover {
+
+.site-navbar .nav-dropdown-toggle {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  font-family: inherit;
+  line-height: inherit;
+}
+
+.site-navbar a:hover,
+.site-navbar .nav-dropdown-toggle:hover,
+.site-navbar .nav-dropdown-toggle:focus-visible {
   background: #4a4e69;
   color: #ffd166;
 }
@@ -137,7 +152,7 @@ p {
 
 .dropdown-menu {
   position: absolute;
-  top: calc(100% + 8px);
+  top: 100%;
   left: 0;
   min-width: 220px;
   margin: 0;
@@ -166,12 +181,14 @@ p {
 }
 
 .main-container {
+  width: min(100%, 900px);
   max-width: 900px;
   margin: 60px auto 40px auto;
   background: #fff;
   border-radius: 16px;
   box-shadow: 0 4px 24px rgba(34,34,59,0.12);
   padding: 40px 48px;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -223,10 +240,19 @@ footer {
   padding: 18px;
   border: 1px solid #ececf3;
   line-height: 1.6;
+  overflow-x: auto;
 }
 
 .stage-report-content p {
   margin-top: 0;
+}
+
+.stage-report-content img {
+  max-width: 100% !important;
+  width: 100% !important;
+  height: auto !important;
+  display: block;
+  object-fit: contain;
 }
 
 .stage-choice-grid {
@@ -361,11 +387,13 @@ footer {
   }
 
   .nav-links li,
-  .nav-links a {
+  .nav-links a,
+  .nav-links .nav-dropdown-toggle {
     width: 100%;
   }
 
-  .nav-links a {
+  .nav-links a,
+  .nav-links .nav-dropdown-toggle {
     display: block;
     box-sizing: border-box;
     text-align: left;

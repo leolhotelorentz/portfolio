@@ -5,7 +5,7 @@ export default function Home() {
     <main className="container-fluid px-2 px-sm-3 px-md-4">
       <div className="main-container">
         <header>
-          <h1>CV</h1>
+          <h1>Mon CV</h1>
         </header>
         <section className="cv-section">
           <img src={cvImagePath} className="cv-img" alt="CV de L'HOTE LORENTZ Léo" />

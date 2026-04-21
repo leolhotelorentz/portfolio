@@ -8,12 +8,12 @@ export default function StagePremiereAnneePage() {
     <main className="container-fluid px-2 px-sm-3 px-md-4">
       <div className="main-container">
         <header>
-          <h1>Stage - Premiere annee</h1>
+          <h1>Stage - Premiere annee de BTS SIO</h1>
         </header>
         <section>
           <DocxViewer
             filePath={stageOnePath}
-            title="Compte rendu de stage - 1ere annee de BTS SIO"
+            title="Compte rendu de stage - 1ere année de BTS SIO"
           />
         </section>
         <footer>
