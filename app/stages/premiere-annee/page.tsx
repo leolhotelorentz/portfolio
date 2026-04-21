@@ -5,19 +5,21 @@ export default function StagePremiereAnneePage() {
   const stageOnePath = `${basePath}/Compte%20rendu%20L%27HOTE%20LORENTZ%20L%C3%A9o.docx`;
 
   return (
-    <main className="main-container">
-      <header>
-        <h1>Stage - Premiere annee</h1>
-      </header>
-      <section>
-        <DocxViewer
-          filePath={stageOnePath}
-          title="Compte rendu de stage - 1ere annee de BTS SIO"
-        />
-      </section>
-      <footer>
-        <small>&copy; 2026 Mon Portfolio - L'HOTE LORENTZ Léo</small>
-      </footer>
+    <main className="container-fluid px-2 px-sm-3 px-md-4">
+      <div className="main-container">
+        <header>
+          <h1>Stage - Premiere annee</h1>
+        </header>
+        <section>
+          <DocxViewer
+            filePath={stageOnePath}
+            title="Compte rendu de stage - 1ere annee de BTS SIO"
+          />
+        </section>
+        <footer>
+          <small>&copy; 2026 Mon Portfolio - L'HOTE LORENTZ Léo</small>
+        </footer>
+      </div>
     </main>
   );
 }

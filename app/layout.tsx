@@ -1,3 +1,5 @@
+
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./globals.css";
 import Link from "next/link";
 
@@ -10,9 +12,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <title>Portfolio - L'HOTE LORENTZ Léo</title>
       </head>
       <body>
-        <nav className="navbar">
+        <nav className="site-navbar">
           <div className="navbar-content">
-              <Link className="logo" href="/">L'HOTE LORENTZ Léo </Link>
+            <Link className="logo" href="/">L'HOTE LORENTZ Léo </Link>
+            <input id="nav-toggle" className="nav-toggle-input" type="checkbox" aria-label="Ouvrir le menu" />
+            <label className="nav-toggle-btn" htmlFor="nav-toggle" aria-hidden="true">
+              <span />
+              <span />
+              <span />
+            </label>
             <ul className="nav-links">
                 <li><Link href="/">Accueil</Link></li>
                 <li><Link href="/cv">CV</Link></li>
