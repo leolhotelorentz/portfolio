@@ -14,7 +14,7 @@ export default function Home() {
           <p>
             Ou me joindre au numéro suivant : 
             <br />
-            <a className="contact-link" href="tel:+33615686887">+33 6 15 68 68 87</a>
+            <a className="contact-link contact-email" href="tel:+33615686887">+33 6 15 68 68 87</a>
           </p>
         </section>
         <footer>
