@@ -8,12 +8,12 @@ export default function StageDeuxiemeAnneePage() {
     <main className="container-fluid px-2 px-sm-3 px-md-4">
       <div className="main-container">
         <header>
-          <h1>Stage - Deuxieme annee de BTS SIO</h1>
+          <h1>Stage - Deuxième année de BTS SIO</h1>
         </header>
         <section>
           <DocxViewer
             filePath={stageTwoPath}
-            title="Compte rendu de stage - 2eme année de BTS SIO"
+            title="Compte rendu de stage - 2ème année de BTS SIO"
           />
         </section>
         <footer>
