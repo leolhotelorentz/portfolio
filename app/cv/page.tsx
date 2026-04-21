@@ -11,7 +11,7 @@ export default function Home() {
           <img src={cvImagePath} className="cv-img" alt="CV de L'HOTE LORENTZ Léo" />
         </section>
         <footer>
-          <small>&copy; 2026 Mon Portfolio - L'HOTE LORENTZ Léo</small>
+          <small>&copy; 2026 Mon portfolio - L'HOTE LORENTZ Léo</small>
         </footer>
       </div>
     </main>

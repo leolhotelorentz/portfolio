@@ -17,7 +17,7 @@ export default function StageDeuxiemeAnneePage() {
           />
         </section>
         <footer>
-          <small>&copy; 2026 Mon Portfolio - L'HOTE LORENTZ Léo</small>
+          <small>&copy; 2026 Mon portfolio - L'HOTE LORENTZ Léo</small>
         </footer>
       </div>
     </main>

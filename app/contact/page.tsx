@@ -12,13 +12,13 @@ export default function Home() {
             <a href="mailto:lhotelorentzleo@gmail.com">lhotelorentzleo@gmail.com</a>
           </p>
           <p>
-            Ou m'appeler au numéro suivant : 
+            Ou me joindre au numéro suivant : 
             <br />
             <a href="tel:+33615686887">+33 6 15 68 68 87</a>
           </p>
         </section>
         <footer>
-          <small>&copy; 2026 Mon Portfolio - L'HOTE LORENTZ Léo</small>
+          <small>&copy; 2026 Mon portfolio - L'HOTE LORENTZ Léo</small>
         </footer>
       </div>
     </main>
