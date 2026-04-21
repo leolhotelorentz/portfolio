@@ -329,26 +329,34 @@ footer {
 
 @media (max-width: 1120px) {
   .navbar-content {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-areas:
+      "logo toggle"
+      "menu menu";
+    align-items: center;
+    column-gap: 10px;
+    row-gap: 8px;
     height: auto;
     min-height: 70px;
     padding: 12px 14px;
-    flex-wrap: wrap;
-    gap: 10px;
   }
 
   .nav-toggle-btn {
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
-    gap: 5px;
-    width: 42px;
-    height: 42px;
+    gap: clamp(3px, 0.55vw, 5px);
+    width: clamp(34px, 4.1vw, 42px);
+    height: clamp(34px, 4.1vw, 42px);
     border-radius: 8px;
     border: 1px solid rgba(255, 255, 255, 0.25);
     cursor: pointer;
-    padding: 0 10px;
-    margin-left: auto;
+    padding: 0 clamp(7px, 0.95vw, 10px);
+    margin-left: 0;
     flex: 0 0 auto;
+    grid-area: toggle;
+    justify-self: end;
   }
 
   .nav-toggle-btn span {
@@ -376,6 +384,7 @@ footer {
     right: auto;
     z-index: auto;
     order: 3;
+    grid-area: menu;
   }
 
   .nav-links li,
@@ -428,6 +437,7 @@ footer {
   }
 
   .logo {
+    grid-area: logo;
     display: inline-flex;
     flex-direction: column;
     align-items: flex-start;
@@ -504,26 +514,34 @@ footer {
 
 @media (max-width: 700px) {
   .navbar-content {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-areas:
+      "logo toggle"
+      "menu menu";
+    align-items: center;
+    column-gap: 8px;
+    row-gap: 8px;
     height: auto;
     min-height: 70px;
     padding: 12px 14px;
-    flex-wrap: wrap;
-    gap: 8px;
   }
 
   .nav-toggle-btn {
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
-    gap: 5px;
-    width: 42px;
-    height: 42px;
+    gap: clamp(3px, 0.75vw, 5px);
+    width: clamp(32px, 9vw, 40px);
+    height: clamp(32px, 9vw, 40px);
     border-radius: 8px;
     border: 1px solid rgba(255, 255, 255, 0.25);
     cursor: pointer;
-    padding: 0 10px;
-    margin-left: auto;
+    padding: 0 clamp(6px, 2vw, 9px);
+    margin-left: 0;
     flex: 0 0 auto;
+    grid-area: toggle;
+    justify-self: end;
   }
 
   .nav-toggle-btn span {
@@ -551,6 +569,7 @@ footer {
     right: auto;
     z-index: auto;
     order: 3;
+    grid-area: menu;
   }
 
   .nav-links li,
@@ -623,6 +642,7 @@ footer {
   }
 
   .logo {
+    grid-area: logo;
     min-width: 0;
     flex: 1 1 auto;
   }
