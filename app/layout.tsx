@@ -17,7 +17,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <li><Link href="/">Accueil</Link></li>
                 <li><Link href="/cv">CV</Link></li>
               <li><Link href="/tableau-synthese">Tableau BTS</Link></li>
-                <li><Link href="/stages">Stages</Link></li>
+                <li className="nav-dropdown">
+                  <Link href="/stages">Stages</Link>
+                  <ul className="dropdown-menu">
+                    <li><Link href="/stages/premiere-annee">Premiere annee</Link></li>
+                    <li><Link href="/stages/deuxieme-annee">Deuxieme annee</Link></li>
+                  </ul>
+                </li>
                 <li><Link href="/contact">Contact</Link></li>
             </ul>
           </div>

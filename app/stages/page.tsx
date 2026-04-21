@@ -1,26 +1,23 @@
-import DocxViewer from "./DocxViewer";
+import Link from "next/link";
 
 export default function StagesPage() {
-  const basePath = process.env.NODE_ENV === 'production' ? '/portfolio' : '';
-
-  const stageOnePath = `${basePath}/Compte%20rendu%20L%27HOTE%20LORENTZ%20L%C3%A9o.docx`;
-  const stageTwoPath = `${basePath}/Compte%20rendu%202eme%20ann%C3%A9e%20L%27HOTE%20LORENTZ%20L%C3%A9o.docx`;
-
   return (
     <main className="main-container">
       <header>
         <h1>Comptes rendus de stage</h1>
       </header>
       <section>
-        <p>Retrouvez ci-dessous mes deux comptes rendus de stage réalisés durant mes années de BTS SIO :</p>
-        <DocxViewer
-          filePath={stageOnePath}
-          title="Compte rendu de stage - 1ere année de BTS SIO"
-        />
-        <DocxViewer
-          filePath={stageTwoPath}
-          title="Compte rendu de stage - 2eme année de BTS SIO"
-        />
+        <p>Choisissez l'annee de stage a consulter :</p>
+        <div className="stage-choice-grid">
+          <Link className="stage-choice-card" href="/stages/premiere-annee">
+            <h2>Premiere annee</h2>
+            <p>Afficher le compte rendu de stage de premiere annee.</p>
+          </Link>
+          <Link className="stage-choice-card" href="/stages/deuxieme-annee">
+            <h2>Deuxieme annee</h2>
+            <p>Afficher le compte rendu de stage de deuxieme annee.</p>
+          </Link>
+        </div>
       </section>
       <footer>
         <small>&copy; 2026 Mon Portfolio - L'HOTE LORENTZ Léo</small>
