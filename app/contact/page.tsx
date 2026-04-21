@@ -9,12 +9,12 @@ export default function Home() {
           <p>
             Pour me contacter, vous pouvez m'envoyer un email à l'adresse suivante : 
             <br />
-            <a href="mailto:lhotelorentzleo@gmail.com">lhotelorentzleo@gmail.com</a>
+            <a className="contact-link contact-email" href="mailto:lhotelorentzleo@gmail.com">lhotelorentzleo@gmail.com</a>
           </p>
           <p>
             Ou me joindre au numéro suivant : 
             <br />
-            <a href="tel:+33615686887">+33 6 15 68 68 87</a>
+            <a className="contact-link" href="tel:+33615686887">+33 6 15 68 68 87</a>
           </p>
         </section>
         <footer>

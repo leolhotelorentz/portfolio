@@ -357,15 +357,34 @@ footer {
     flex: 0 0 auto;
     grid-area: toggle;
     justify-self: end;
+    position: relative;
+    overflow: hidden;
   }
 
   .nav-toggle-btn span {
+    position: absolute;
+    left: 50%;
     display: block;
     height: 2px;
-    width: 100%;
+    width: 14px;
+    margin: 0;
     background: #fff;
     border-radius: 2px;
-    transition: transform 0.2s, opacity 0.2s;
+    transform-origin: center;
+    transform: translateX(-50%);
+    transition: transform 0.2s, opacity 0.2s, top 0.2s;
+  }
+
+  .nav-toggle-btn span:nth-child(1) {
+    top: calc(50% - 6px);
+  }
+
+  .nav-toggle-btn span:nth-child(2) {
+    top: 50%;
+  }
+
+  .nav-toggle-btn span:nth-child(3) {
+    top: calc(50% + 6px);
   }
 
   .site-navbar .nav-links {
@@ -405,7 +424,8 @@ footer {
   }
 
   .nav-toggle-input:checked + .nav-toggle-btn span:nth-child(1) {
-    transform: translateY(7px) rotate(45deg);
+    top: 50%;
+    transform: translateX(-50%) rotate(45deg);
   }
 
   .nav-toggle-input:checked + .nav-toggle-btn span:nth-child(2) {
@@ -413,7 +433,8 @@ footer {
   }
 
   .nav-toggle-input:checked + .nav-toggle-btn span:nth-child(3) {
-    transform: translateY(-7px) rotate(-45deg);
+    top: 50%;
+    transform: translateX(-50%) rotate(-45deg);
   }
 
   .nav-dropdown {
@@ -512,6 +533,19 @@ footer {
   background: #343a6a;
 }
 
+.contact-link {
+  display: inline-block;
+  max-width: 100%;
+  color: #1a237e;
+  text-decoration-thickness: 1px;
+}
+
+.contact-email {
+  font-size: clamp(0.9rem, 2.6vw, 1.2rem);
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
 @media (max-width: 700px) {
   .navbar-content {
     display: grid;
@@ -542,15 +576,34 @@ footer {
     flex: 0 0 auto;
     grid-area: toggle;
     justify-self: end;
+    position: relative;
+    overflow: hidden;
   }
 
   .nav-toggle-btn span {
+    position: absolute;
+    left: 50%;
     display: block;
     height: 2px;
-    width: 100%;
+    width: 13px;
+    margin: 0;
     background: #fff;
     border-radius: 2px;
-    transition: transform 0.2s, opacity 0.2s;
+    transform-origin: center;
+    transform: translateX(-50%);
+    transition: transform 0.2s, opacity 0.2s, top 0.2s;
+  }
+
+  .nav-toggle-btn span:nth-child(1) {
+    top: calc(50% - 5px);
+  }
+
+  .nav-toggle-btn span:nth-child(2) {
+    top: 50%;
+  }
+
+  .nav-toggle-btn span:nth-child(3) {
+    top: calc(50% + 5px);
   }
 
   .site-navbar .nav-links {
@@ -590,7 +643,8 @@ footer {
   }
 
   .nav-toggle-input:checked + .nav-toggle-btn span:nth-child(1) {
-    transform: translateY(7px) rotate(45deg);
+    top: 50%;
+    transform: translateX(-50%) rotate(45deg);
   }
 
   .nav-toggle-input:checked + .nav-toggle-btn span:nth-child(2) {
@@ -598,7 +652,8 @@ footer {
   }
 
   .nav-toggle-input:checked + .nav-toggle-btn span:nth-child(3) {
-    transform: translateY(-7px) rotate(-45deg);
+    top: 50%;
+    transform: translateX(-50%) rotate(-45deg);
   }
 
   .nav-dropdown {
