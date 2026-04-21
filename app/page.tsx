@@ -6,11 +6,12 @@ export default function Home() {
       </header>
       <section>
         <p>
-          À propos
-          Je m'appelle Léo L'HOTE LORENTZ et je suis actuellement étudiant en seconde année de BTS SIO, 
-          j'ai crée ce portfolio afin de pouvoir repertorier mes differentes activités réalisés 
-          lors de mes années d'études en informatique. Vous pourrez y retrouver mon cv, 
-          mes rapports de stage et des projets réalisés lors de ma formation.
+          Je m'appelle Léo L'HOTE LORENTZ et je suis actuellement étudiant en deuxième année de BTS SIO.
+          J'ai créé ce portfolio pour présenter mon parcours, mes compétences et les réalisations effectuées
+          durant ma formation en informatique.
+          Vous y trouverez mon CV, mes comptes rendus de stage et différents projets.
+          Je suis également à la recherche d'une alternance afin de continuer à développer mes compétences
+          techniques en entreprise.
         </p>
       </section>
       <footer>

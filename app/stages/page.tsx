@@ -12,14 +12,14 @@ export default function StagesPage() {
         <h1>Comptes rendus de stage</h1>
       </header>
       <section>
-        <p>Retrouvez ci-dessous mes deux comptes rendus de stage affichés directement sur le portfolio :</p>
+        <p>Retrouvez ci-dessous mes deux comptes rendus de stage réalisés durant mes années de BTS SIO :</p>
         <DocxViewer
           filePath={stageOnePath}
-          title="Compte rendu de stage - 1ere experience"
+          title="Compte rendu de stage - 1ere année de BTS SIO"
         />
         <DocxViewer
           filePath={stageTwoPath}
-          title="Compte rendu de stage - 2eme annee"
+          title="Compte rendu de stage - 2eme année de BTS SIO"
         />
       </section>
       <footer>

@@ -30,9 +30,8 @@ section.cv-section {
 }
 
 .layout-bg {
-  min-height: 100vh;
   background: linear-gradient(135deg, #e0e7ff 0%, #f5f5f5 100%);
-  padding-top: 40px;
+  padding-top: 24px;
 }
 
 
@@ -114,10 +113,9 @@ body {
   border-radius: 16px;
   box-shadow: 0 4px 24px rgba(34,34,59,0.12);
   padding: 40px 48px;
-  min-height: 70vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   animation: fadeIn 0.7s;
 }
 
@@ -135,7 +133,6 @@ header h1 {
 
 
 section {
-  flex: 1;
   font-size: 1.2rem;
   margin-bottom: 32px;
 }
@@ -170,6 +167,94 @@ footer {
 
 .stage-report-content p {
   margin-top: 0;
+}
+
+.stage-choice-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.stage-choice-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  background: #f7f7fa;
+  border: 1px solid #d9dbe7;
+  border-radius: 12px;
+  padding: 18px;
+  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+}
+
+.stage-choice-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(34, 34, 59, 0.1);
+  border-color: #a8b0de;
+}
+
+.stage-choice-card h2 {
+  margin: 0 0 10px;
+  color: #1a237e;
+  font-size: 1.25rem;
+}
+
+.stage-choice-card p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.contact-intro {
+  margin-bottom: 18px;
+  line-height: 1.5;
+}
+
+.contact-form {
+  display: grid;
+  gap: 10px;
+}
+
+.contact-form label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1f2445;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  border: 1px solid #cfd3e6;
+  border-radius: 10px;
+  padding: 12px 14px;
+  font-size: 1rem;
+  font-family: inherit;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: 2px solid #8893ff;
+  outline-offset: 1px;
+  border-color: #8893ff;
+}
+
+.contact-form button {
+  margin-top: 8px;
+  border: 0;
+  border-radius: 10px;
+  padding: 12px 18px;
+  width: fit-content;
+  background: #22223b;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.contact-form button:hover {
+  background: #343a6a;
 }
 
 @media (max-width: 700px) {
