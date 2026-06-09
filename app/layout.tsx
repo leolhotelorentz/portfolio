@@ -37,6 +37,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                     <li><Link href="/stages/deuxieme-annee">Deuxième année</Link></li>
                   </ul>
                 </li>
+                <li className="nav-dropdown">
+                  <button type="button" className="nav-dropdown-toggle">Projets</button>
+                  <ul className="dropdown-menu">
+                    <li><Link href="/projets/ap-transcite">AP Transcite</Link></li>
+                    <li><Link href="/projets/ap-lst">AP LST</Link></li>
+                    <li><Link href="/projets/tp-geststages">TP GestStages</Link></li>
+                    <li><Link href="/projets/ap-planning">AP Planning</Link></li>
+                    <li><Link href="/projets/ap-triathlon">AP Triathlon</Link></li>
+                  </ul>
+                </li>
+                <li><Link href="/veille-technologique">Veille technologique</Link></li>
                 <li><Link href="/contact">Contact</Link></li>
             </ul>
           </div>

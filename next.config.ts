@@ -7,4 +7,6 @@ const nextConfig: NextConfig = {
   basePath: isProd ? "/portfolio" : "",
 };
 
+export default nextConfig;
+
 

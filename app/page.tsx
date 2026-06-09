@@ -13,7 +13,7 @@ export default function Home() {
             de première et de deuxième année.
             Une page contact est également disponible pour me joindre facilement.
             Je suis à la recherche d'une alternance afin de poursuivre mes études et approfondir
-            mes compétences en développement web.
+            mes compétences en développement.
           </p>
         </section>
         <footer>
