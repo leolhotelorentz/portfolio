@@ -3,22 +3,27 @@ export default function ApTranscitePage() {
 
   return (
     <main className="container-fluid px-2 px-sm-3 px-md-4">
-      <div className="main-container">
+      <div className="main-container project-main-container">
         <header>
           <h1>AP Transcité</h1>
         </header>
         <section>
           <article className="stage-report">
-            <h2>Compte rendu du projet</h2>
             <div className="stage-report-content">
               <p>
-                Pour cet AP Transcité, j’ai conçu une base de données à partir de la documentation fournie par le professeur, puis développé une application web pour exploiter les données et présenter des informations sur le réseau. Le projet m’a amené à créer le modèle de données, à générer les tables, à compléter la base avec des stations, des lignes et des commentaires, puis à tester l’ensemble avec plusieurs requêtes SQL.
+                  Dans le cadre de cet AP Transcité, j’ai participé à la conception et au développement d’une application web reposant sur une base de données dédiée à la gestion d’un réseau de transport. À partir de la documentation fournie, j’ai analysé les besoins afin de concevoir le modèle de données puis de générer les différentes tables nécessaires au fonctionnement de l’application.
               </p>
+
               <p>
-                J’ai ensuite mis en place différentes pages PHP pour consulter les lignes, afficher les stations associées, visualiser des statistiques et ajouter des commentaires dans la base. Ce travail m’a permis de renforcer mes compétences en SQL, en structure relationnelle et en développement web dynamique.
+                  J’ai ensuite alimenté la base de données avec les informations relatives aux lignes, aux stations et aux commentaires. Plusieurs requêtes SQL ont été réalisées afin de vérifier la cohérence des données et de valider le bon fonctionnement de la structure relationnelle mise en place.
               </p>
+
               <p>
-                Au final, ce projet m’a permis de travailler sur toute la chaîne, de la construction de la base jusqu’à l’affichage des données dans l’application.
+                  Une fois la base de données opérationnelle, j’ai développé différentes pages web en PHP permettant de consulter les lignes du réseau, d’afficher les stations associées, de visualiser des statistiques et d’ajouter des commentaires. Ces fonctionnalités s’appuient sur des échanges dynamiques entre l’application et la base de données.
+              </p>
+
+              <p>
+                  Cette réalisation m’a permis de mettre en pratique les différentes étapes du cycle de développement d’une application web, de la conception de la base de données jusqu’à l’exploitation des données dans une interface utilisateur. Elle a également renforcé mes compétences en modélisation de données, en SQL, en développement PHP et dans l’utilisation d’une architecture client-serveur.
               </p>
 
               <figure className="transcite-shot">
@@ -27,18 +32,21 @@ export default function ApTranscitePage() {
                   alt="Capture de la base de données TransCité"
                 />
               </figure>
+              <br />
               <figure className="transcite-shot">
                 <img
                   src={`${assetPrefix}/Transcite/Transcite%20Screen%20Ligne.png`}
                   alt="Capture de l'affichage des lignes de bus TransCité"
                 />
               </figure>
+              <br />
               <figure className="transcite-shot">
                 <img
                   src={`${assetPrefix}/Transcite/Transcite%20Screen%20Stat.png`}
                   alt="Capture des statistiques TransCité"
                 />
               </figure>
+              <br />
               <figure className="transcite-shot">
                 <img
                   src={`${assetPrefix}/Transcite/Transcite%20Screen%20Commentaire.png`}

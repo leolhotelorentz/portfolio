@@ -10,11 +10,10 @@ export default function VeilleTechnologiquePage() {
     <main className="container-fluid px-2 px-sm-3 px-md-4">
       <div className="main-container">
         <header>
-          <h1>Veille technologique</h1>
+          <h1>Veille technologique : NGINX</h1>
         </header>
         <section>
           <article className="stage-report">
-            <h2>Veille technologique : NGINX</h2>
 
             <div className="stage-report-content">
               <h3>1. Présentation du sujet : NGINX, un serveur incontournable du web moderne</h3>
