@@ -21,7 +21,7 @@ export default function ApLstPage() {
               </p>
               <p>
                 Cette expérience m’a permis de mettre en œuvre les différentes étapes du cycle de développement d’une application web, de la conception de la base de données jusqu’à la réalisation de l’interface utilisateur. Elle m’a également permis de renforcer mes compétences en modélisation des données, en SQL, en développement PHP et dans l’exploitation d’une architecture client-serveur.
-              </p>
+              </p >
 
               <figure className="transcite-shot">
                 <img
