@@ -4,3 +4,9 @@ declare module "*.css" {
 }
 
 declare module "./globals.css";
+
+declare namespace JSX {
+  interface IntrinsicElements {
+    "planning-component": React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>;
+  }
+}
