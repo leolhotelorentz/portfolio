@@ -1,5 +1,4 @@
-import React from "react";
-import Script from "next/script";
+import PlanningEmbed from "./PlanningEmbed";
 
 export default function ApPlanningPage() {
   const assetPrefix = process.env.NODE_ENV === "production" ? "/portfolio" : "";
@@ -14,26 +13,7 @@ export default function ApPlanningPage() {
           <p>
             Pour cet AP Planning, j’ai créé un web component en JavaScript pour afficher un planning interactif avec navigation par semaine, ajout d’événements, modification, suppression et consultation des événements à venir. 
           </p>
-          <Script
-            id="planning-base-path"
-            strategy="beforeInteractive"
-            dangerouslySetInnerHTML={{
-              __html: `window.__PLANNING_BASE_PATH__ = ${JSON.stringify(assetPrefix)};`,
-            }}
-          />
-          <Script src="https://cdn.jsdelivr.net/npm/flatpickr" strategy="beforeInteractive" />
-          <Script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/fr.js" strategy="beforeInteractive" />
-          <Script src={`${assetPrefix}/Planning/classes/DateUtils.js`} strategy="afterInteractive" />
-          <Script src={`${assetPrefix}/Planning/classes/Data.js`} strategy="afterInteractive" />
-          <Script src={`${assetPrefix}/Planning/classes/Date.js`} strategy="afterInteractive" />
-          <Script src={`${assetPrefix}/Planning/classes/Evenement.js`} strategy="afterInteractive" />
-          <Script src={`${assetPrefix}/Planning/classes/Affichage.js`} strategy="afterInteractive" />
-          <Script src={`${assetPrefix}/Planning/classes/EvenementSouris.js`} strategy="afterInteractive" />
-          <Script src={`${assetPrefix}/Planning/classes/Vue.js`} strategy="afterInteractive" />
-          <Script src={`${assetPrefix}/Planning/components/PlanningComponent.js`} strategy="afterInteractive" />
-          <div className="planning-embed">
-            {React.createElement("planning-component")}
-          </div>
+          <PlanningEmbed assetPrefix={assetPrefix} />
         </section>
         <footer>
           <small>&copy; 2026 Mon portfolio - L'HOTE LORENTZ Léo</small>
