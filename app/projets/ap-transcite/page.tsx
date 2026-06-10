@@ -17,6 +17,9 @@ export default function ApTranscitePage() {
               <p>
                 J’ai ensuite mis en place différentes pages PHP pour consulter les lignes, afficher les stations associées, visualiser des statistiques et ajouter des commentaires dans la base. Ce travail m’a permis de renforcer mes compétences en SQL, en structure relationnelle et en développement web dynamique.
               </p>
+              <p>
+                Au final, ce projet m’a permis de travailler sur toute la chaîne, de la construction de la base jusqu’à l’affichage des données dans l’application.
+              </p>
 
               <figure className="transcite-shot">
                 <img
@@ -42,9 +45,6 @@ export default function ApTranscitePage() {
                   alt="Capture de la page d'ajout de commentaire TransCité"
                 />
               </figure>
-              <p>
-                Au final, ce projet m’a permis de travailler sur toute la chaîne, de la construction de la base jusqu’à l’affichage des données dans l’application.
-              </p>
             </div>
           </article>
         </section>
